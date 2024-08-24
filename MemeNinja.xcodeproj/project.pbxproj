@@ -8,19 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		F89CC7972C797A6E00F06135 /* MemeNinjaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CC7962C797A6E00F06135 /* MemeNinjaApp.swift */; };
-		F89CC7992C797A6E00F06135 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CC7982C797A6E00F06135 /* ContentView.swift */; };
+		F89CC7992C797A6E00F06135 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CC7982C797A6E00F06135 /* StartView.swift */; };
 		F89CC79B2C797A6F00F06135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89CC79A2C797A6F00F06135 /* Assets.xcassets */; };
 		F89CC79E2C797A6F00F06135 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89CC79D2C797A6F00F06135 /* Preview Assets.xcassets */; };
 		F89CC7A62C797B3A00F06135 /* Slice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F89CC7A52C797B3A00F06135 /* Slice.mp3 */; };
+		F89CC7A92C79915700F06135 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CC7A82C79915700F06135 /* GameScene.swift */; };
+		F89CC7AC2C79932700F06135 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CC7AB2C79932700F06135 /* GameView.swift */; };
+		F89CC7AE2C79B11400F06135 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CC7AD2C79B11400F06135 /* GameOverView.swift */; };
+		F89CC7B02C79B35F00F06135 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89CC7AF2C79B35F00F06135 /* Launch Screen.storyboard */; };
+		F89CC7B32C79B53900F06135 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CC7B22C79B53900F06135 /* SoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F89CC7932C797A6E00F06135 /* MemeNinja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeNinja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89CC7962C797A6E00F06135 /* MemeNinjaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeNinjaApp.swift; sourceTree = "<group>"; };
-		F89CC7982C797A6E00F06135 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F89CC7982C797A6E00F06135 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		F89CC79A2C797A6F00F06135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F89CC79D2C797A6F00F06135 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F89CC7A52C797B3A00F06135 /* Slice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Slice.mp3; sourceTree = "<group>"; };
+		F89CC7A82C79915700F06135 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F89CC7AB2C79932700F06135 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		F89CC7AD2C79B11400F06135 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		F89CC7AF2C79B35F00F06135 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F89CC7B22C79B53900F06135 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +63,12 @@
 		F89CC7952C797A6E00F06135 /* MemeNinja */ = {
 			isa = PBXGroup;
 			children = (
+				F89CC7B12C79B53000F06135 /* Managers */,
+				F89CC7AA2C79931900F06135 /* Views */,
+				F89CC7A72C79915000F06135 /* Scenes */,
 				F89CC7A42C797B2F00F06135 /* Sounds */,
-				F89CC7962C797A6E00F06135 /* MemeNinjaApp.swift */,
-				F89CC7982C797A6E00F06135 /* ContentView.swift */,
 				F89CC79A2C797A6F00F06135 /* Assets.xcassets */,
+				F89CC7AF2C79B35F00F06135 /* Launch Screen.storyboard */,
 				F89CC79C2C797A6F00F06135 /* Preview Content */,
 			);
 			path = MemeNinja;
@@ -76,6 +88,33 @@
 				F89CC7A52C797B3A00F06135 /* Slice.mp3 */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		F89CC7A72C79915000F06135 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F89CC7A82C79915700F06135 /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F89CC7AA2C79931900F06135 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F89CC7962C797A6E00F06135 /* MemeNinjaApp.swift */,
+				F89CC7982C797A6E00F06135 /* StartView.swift */,
+				F89CC7AB2C79932700F06135 /* GameView.swift */,
+				F89CC7AD2C79B11400F06135 /* GameOverView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F89CC7B12C79B53000F06135 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F89CC7B22C79B53900F06135 /* SoundManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +177,7 @@
 			files = (
 				F89CC79E2C797A6F00F06135 /* Preview Assets.xcassets in Resources */,
 				F89CC79B2C797A6F00F06135 /* Assets.xcassets in Resources */,
+				F89CC7B02C79B35F00F06135 /* Launch Screen.storyboard in Resources */,
 				F89CC7A62C797B3A00F06135 /* Slice.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F89CC7992C797A6E00F06135 /* ContentView.swift in Sources */,
+				F89CC7AE2C79B11400F06135 /* GameOverView.swift in Sources */,
+				F89CC7A92C79915700F06135 /* GameScene.swift in Sources */,
+				F89CC7992C797A6E00F06135 /* StartView.swift in Sources */,
+				F89CC7AC2C79932700F06135 /* GameView.swift in Sources */,
 				F89CC7972C797A6E00F06135 /* MemeNinjaApp.swift in Sources */,
+				F89CC7B32C79B53900F06135 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +334,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,8 +363,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
