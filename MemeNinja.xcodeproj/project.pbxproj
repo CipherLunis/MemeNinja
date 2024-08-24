@@ -11,6 +11,7 @@
 		F89CC7992C797A6E00F06135 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89CC7982C797A6E00F06135 /* ContentView.swift */; };
 		F89CC79B2C797A6F00F06135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89CC79A2C797A6F00F06135 /* Assets.xcassets */; };
 		F89CC79E2C797A6F00F06135 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89CC79D2C797A6F00F06135 /* Preview Assets.xcassets */; };
+		F89CC7A62C797B3A00F06135 /* Slice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F89CC7A52C797B3A00F06135 /* Slice.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F89CC7982C797A6E00F06135 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F89CC79A2C797A6F00F06135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F89CC79D2C797A6F00F06135 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F89CC7A52C797B3A00F06135 /* Slice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Slice.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		F89CC7952C797A6E00F06135 /* MemeNinja */ = {
 			isa = PBXGroup;
 			children = (
+				F89CC7A42C797B2F00F06135 /* Sounds */,
 				F89CC7962C797A6E00F06135 /* MemeNinjaApp.swift */,
 				F89CC7982C797A6E00F06135 /* ContentView.swift */,
 				F89CC79A2C797A6F00F06135 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				F89CC79D2C797A6F00F06135 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F89CC7A42C797B2F00F06135 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F89CC7A52C797B3A00F06135 /* Slice.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +138,7 @@
 			files = (
 				F89CC79E2C797A6F00F06135 /* Preview Assets.xcassets in Resources */,
 				F89CC79B2C797A6F00F06135 /* Assets.xcassets in Resources */,
+				F89CC7A62C797B3A00F06135 /* Slice.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
