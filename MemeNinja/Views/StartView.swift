@@ -66,7 +66,7 @@ struct StartView: View {
                     }
                     VStack {
                         Spacer()
-                            .frame(height: geo.size.height/1.3)
+                            .frame(height: geo.size.height/1.35)
                         Button(action: {
                             // start game
                             showGame = true

@@ -15,7 +15,7 @@ struct GameView: View {
     var body: some View {
         ZStack {
             GeometryReader { geo in
-                SpriteView(scene: game/*, debugOptions: [.showsPhysics]*/)
+                SpriteView(scene: game)
                     .ignoresSafeArea()
                 // shadow opacity
                 Rectangle()
